@@ -11,6 +11,8 @@ import OtpVerificationPage from "./pages/OtpVerificationPage";
 import ResetPasswordPage from "./pages/ResetPasswordPage";
 import Home from "./components/Home/home";
 import Navbar from "./pages/Navbar";
+import MyProfilePage from "./pages/MyProfilePage";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 
 function App() {
@@ -25,7 +27,8 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPasswordPage/>} />
          <Route path="/otp-verification" element={<OtpVerificationPage/>} />
         <Route path="/reset-password/:token" element={<ResetPasswordPage/>} />
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={ <ProtectedRoute><Home/></ProtectedRoute> } />
+        <Route path="/profile" element={ <ProtectedRoute> <MyProfilePage/> </ProtectedRoute> } />
 
   
         

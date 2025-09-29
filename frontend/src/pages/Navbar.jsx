@@ -45,9 +45,9 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                to="/info"
+                to="/profile"
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                  isActive('/info')
+                  isActive('/profile')
                     ? 'bg-white text-teal-600 shadow-md'
                     : 'text-white hover:bg-white/20 hover:scale-105'
                 }`}

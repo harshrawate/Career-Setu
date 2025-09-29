@@ -3,6 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import connectDB from './config/db.js'
 import authRoutes from "./routes/authRoutes.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 
@@ -11,6 +12,7 @@ connectDB()
 
 
 const app = express();
+app.use(cookieParser());
 
 
 app.use(cors({

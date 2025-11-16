@@ -13,6 +13,7 @@ import Home from "./components/Home/home";
 import Navbar from "./pages/Navbar";
 import MyProfilePage from "./pages/MyProfilePage";
 import ProtectedRoute from "./pages/ProtectedRoute";
+import InterestAssessment from "./pages/InterestAssessment";
 
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
         <Route path="/reset-password/:token" element={<ResetPasswordPage/>} />
         <Route path="/" element={ <ProtectedRoute><Home/></ProtectedRoute> } />
         <Route path="/profile" element={ <ProtectedRoute> <MyProfilePage/> </ProtectedRoute> } />
+
+
+
+        <Route path="/interest-assessment" element={ <ProtectedRoute> <InterestAssessment/> </ProtectedRoute> } />
 
   
         

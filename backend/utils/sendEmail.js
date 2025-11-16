@@ -10,7 +10,7 @@ export const sendEmail = async (to, subject, text) => {
   });
 
   await transporter.sendMail({
-    from: `"Samgri Team" <${process.env.MAIL_USER}>`,
+    from: `"Career-Setu Team" <${process.env.MAIL_USER}>`,
     to,
     subject,
     text,

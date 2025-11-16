@@ -187,7 +187,7 @@ const Home = () => {
         </div>
 
         {/* Call to Action Section */}
-        <div className="text-center mt-20">
+        {/* <div className="text-center mt-20">
           <button
             onClick={() => navigate('/get-started')}  // ✅ Added navigation for CTA button
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
@@ -196,10 +196,10 @@ const Home = () => {
             Get Started Today
             <ChartBarIcon className="w-5 h-5 ml-2" />
           </button>
-        </div>
+        </div> */}
 
         {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
           {[
             { number: '10K+', label: 'Students Guided', icon: AcademicCapIcon },
             { number: '500+', label: 'Career Paths', icon: ChartBarIcon },
@@ -212,7 +212,7 @@ const Home = () => {
               <div className="text-sm text-gray-600">{stat.label}</div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
